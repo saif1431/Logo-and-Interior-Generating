@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.icon input {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vw;
+}
+
+.icon select {
+  /* background-color: red; */
+  border: 1px solid #555;
+  background: none;
+  /* border: none; */
+  padding: .7vw 1vw;
+  font-size: 1.2vw;
+  border-radius: 5px;
+}
+
+.navbar i {
+  font-size: 2vw;
+  display: none;
+}
+
+@media screen and (width > 300px) and (width < 900px) {
+  .icon select {
+    font-size: 5vw;
+  }
+
+  .navbar i {
+    display: block;
+    font-size: 5vw;
+  }
+
+  .navbar .nav-btn {
+    display: none;
+  }
+}

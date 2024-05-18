@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/Uplaod.css">
+    <title>AI interior design</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/ROWAD/HTML/businessIdentity.html"><button class="btn1" style="color: #fff;"><i class="fa-solid fa-arrow-left" style="color: #fff;"></i>Back</button></a>
+     <a href="/ROWAD/HTML/BusinessRecommendation.html">   <button class="nav-btn btn">Business Recommendation</button></a>
+   <a href="/ROWAD/HTML/InteriorDesign.html">     <button class="nav-btn btn">Interior Design idea</button></a>
+        <a href="/ROWAD/HTML/businessIdentity.html"><button class="nav-btn">Design Business Identity</button></a>
+        <a href="/ROWAD/HTML/FinancialAnalysis.html"><button class="nav-btn">Financial Analysis</button></a>
+        <i class="ri-menu-line"></i>
+        <!-- <a href="../HTML/theme.html"><button class="btn2">Next</button></a> -->
+
+    </div>
+    <div class="back">
+        <div id="progress-bar"></div>
+    </div>
+
+    <div class="icons">
+        <h3>Enter a Prompt for your Business Logo or Interior Design</h3>
+    </div>
+
+    <div class="box">
+        <div class="container">
+            <div class="wrapper">
+                <div class="image">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <div class="radio-btn">
+                            <a href="./logoDesign.html">
+                                <input type="radio">
+                                <p>Business Logo</p>
+                            </a>
+                        </div>
+                        <div class="radio-btn">
+                            <a href="./inetrior.html">
+                                <input type="radio">
+                                <p>Interior Design</p>
+                            </a>
+                        </div>
+                        <!-- <input type="text" id="logo_description" placeholder="Enter a Prompt"> -->
+                        <!-- <i class="fas fa-cloud-upload-alt"></i> -->
+                    </div>
+                    <div class="text">
+                        <!-- No file chosen, yet! -->
+                    </div>
+                </div>
+                <div id="cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="file-name">
+                    File name here
+                </div>
+            </div>
+            <!-- <button id="custom-btn">Generate</button> -->
+            <input id="default-btn" type="file" hidden>
+        </div>
+    </div>
+    <script src="../JS/requestScripts.js"></script>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html

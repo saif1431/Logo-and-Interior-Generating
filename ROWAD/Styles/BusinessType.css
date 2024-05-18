@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    background-color: #e4e4e4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 200px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.btn1 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn1 i {
+    margin-right: 5px;
+}
+
+.btn1:hover {
+    transition: all 0.3s ease 0s;
+    margin-left: -20px;
+    color: #056773;
+}
+
+.btn2 {
+    padding: 7px 20px;
+    background-color: #FFA200;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: 20px;
+}
+
+.btn2:hover {
+    background-color: #056773;
+    padding: 7px 30px;
+}
+
+.back {
+    height: 10px;
+    background-color: #ffffff;
+}
+
+#progress-bar {
+    --progress: 0;
+    height: 10px;
+    width: var(--progress);
+    background-image: linear-gradient(to right, #D6F6F0, #6BE6CD, #174D42);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.icons h3 {
+    font-size: 19px;
+    margin: 30px 100px;
+    color: #254D4C;
+}
+
+
+.box #Techonology,
+#Medical,
+#Restaurant {
+    padding: 6px 10px;
+    background-color: #FFA200;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 2rem;
+}
+
+.box #Techonology:hover,
+#Medical:hover,
+#Restaurant:hover {
+    background: transparent;
+    color: #056773;
+    border: 2px solid #056773;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 3fr));
+    gap: 3rem;
+    max-width: 800px;
+    padding: 50px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.container .box {
+    border-radius: .5rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background: #e9f6fc;
+}
+
+.container .box .image {
+    height: 10rem;
+    width: 100%;
+    position: relative;
+}
+
+.container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.container .box h3 {
+    color: #056773;
+    font-size: 16px;
+}
+
+.men {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    margin-top: 1vw;
+}
+
+.select-menu .select-btn {
+    display: flex;
+    height: 10vh;
+    font-size: 14px;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+}
+
+.select-btn select {
+    border: none;
+    padding: .8vw 4vw;
+}
+
+.select-btn select option {
+    font-size: 1vw;
+}
+
+.select-menu .options {
+    position: relative;
+    width: 200px;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); */
+    /* display: none; */
+}
+
+.select-menu.active .options {
+    display: block;
+}
+
+.options .option {
+    display: flex;
+    height: 25px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    /* background: #fff; */
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.options:hover .option:hover {
+    background: #e9f6e9;
+    margin-left: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+@media screen and (width > 300px) and (width < 786px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .btn1 {
+        margin-right: 15vw;
+    }
+
+    .men {
+        flex-direction: column;
+        margin-bottom: 2vw;
+    }
+
+    .select-btn select option {
+        border: none;
+        font-size: 3vw;
+    }
+}
